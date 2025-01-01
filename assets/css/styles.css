@@ -138,6 +138,8 @@ button {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .nav {
@@ -160,7 +162,7 @@ button {
 }
 
 .nav__logo-img {
-  width: 2.75rem;
+  width: 3.75rem;
 }
 
 .nav__toggle {
