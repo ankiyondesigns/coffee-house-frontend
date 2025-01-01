@@ -441,6 +441,9 @@ button {
 }
 
 /* Active link products */
+.active-product .products__title {
+  color: var(--title-color);
+}
 
 /*=============== QUALITY ===============*/
 
