@@ -245,11 +245,7 @@ button {
 
 .home__container {
   padding: 7rem 0 2.5rem;
-  background: linear-gradient(
-    160deg,
-    hsla(206, 5%, 24%, 1) -4%,
-    hsla(206, 12%, 12%, 1) 46%
-  );
+  background: linear-gradient(160deg, #022036 -4%, #01121e 46%);
 }
 
 .home__content {
