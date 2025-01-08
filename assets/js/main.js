@@ -59,7 +59,7 @@ let mixerProducts = mixitup(".products__content", {
 });
 
 /* Default filter products */
-mixerProducts.filter(".delicacies");
+mixerProducts.filter(".coffee");
 
 /* Link active products */
 const linkProducts = document.querySelectorAll(".products__item");
