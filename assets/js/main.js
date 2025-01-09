@@ -103,3 +103,20 @@ function scrollActive() {
   });
 }
 window.addEventListener("scroll", scrollActive);
+
+/* Read More BTN */
+document.addEventListener("DOMContentLoaded", () => {
+  const readMoreBtn = document.querySelector(".read-more-btn");
+  const extraContent = document.querySelector(".quality__extra-content");
+
+  readMoreBtn.addEventListener("click", (e) => {
+    e.preventDefault(); // Prevent the default link behavior
+    extraContent.classList.toggle("hidden");
+
+    if (extraContent.classList.contains("hidden")) {
+      readMoreBtn.innerHTML = 'Read more <i class="bx bx-right-arrow-alt"></i>';
+    } else {
+      readMoreBtn.innerHTML = 'Read less <i class="bx bx-up-arrow-alt"></i>';
+    }
+  });
+});
