@@ -450,6 +450,10 @@ button {
 }
 
 /*=============== QUALITY ===============*/
+.hidden {
+  display: none;
+}
+
 .quality {
   background-color: #fff;
 }
