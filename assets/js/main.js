@@ -105,18 +105,35 @@ function scrollActive() {
 window.addEventListener("scroll", scrollActive);
 
 /* Read More BTN */
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
   const readMoreBtn = document.querySelector(".read-more-btn");
   const extraContent = document.querySelector(".quality__extra-content");
+  const buttonContainer = document.querySelector(".quality__buttons");
 
-  readMoreBtn.addEventListener("click", (e) => {
-    e.preventDefault(); // Prevent the default link behavior
-    extraContent.classList.toggle("hidden");
+  // Hide extra content on page load
+  extraContent.classList.add("hidden");
+
+  readMoreBtn.addEventListener("click", function (e) {
+    e.preventDefault();
 
     if (extraContent.classList.contains("hidden")) {
-      readMoreBtn.innerHTML = 'Read more <i class="bx bx-right-arrow-alt"></i>';
+      // Show extra content
+      extraContent.classList.remove("hidden");
+
+      // Move button to the bottom of the extra content
+      extraContent.appendChild(readMoreBtn);
+
+      // Update button text
+      readMoreBtn.innerHTML = `Read less <i class="bx bx-left-arrow-alt"></i>`;
     } else {
-      readMoreBtn.innerHTML = 'Read less <i class="bx bx-up-arrow-alt"></i>';
+      // Hide extra content
+      extraContent.classList.add("hidden");
+
+      // Move button back to its original position
+      buttonContainer.appendChild(readMoreBtn);
+
+      // Update button text
+      readMoreBtn.innerHTML = `Read more <i class="bx bx-right-arrow-alt"></i>`;
     }
   });
 });
