@@ -451,7 +451,7 @@ button {
 
 /*=============== QUALITY ===============*/
 .hidden {
-  display: none;
+  display: none !important; /* Forcefully hide the content */
 }
 
 .quality {
@@ -541,6 +541,11 @@ button {
 .quality__extra-content .quality__description {
   width: 100%;
   margin-top: 1rem;
+}
+
+.middle_about {
+  display: flex;
+  justify-content: center;
 }
 
 /*=============== LOGOS ===============*/
