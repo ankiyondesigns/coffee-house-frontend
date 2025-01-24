@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Read the latest blog post on coffee origins." />
+    <meta name="keywords" content="coffee, origins, blog" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="{{ post.title }}">
+    <meta property="og:description" content="{{ post.meta_description|default:"Read our latest blog post about exceptional topics." }}">
+    <meta property="og:image" content="{{ post.banner.url }}">
+    <meta property="og:url" content="{{ request.build_absolute_uri }}">
+    <meta property="og:type" content="article">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ post.title }}">
+    <meta name="twitter:description" content="{{ post.meta_description|default:"Read our latest blog post about exceptional topics." }}">
+    <meta name="twitter:image" content="{{ post.banner.url }}">
+    <meta name="twitter:url" content="{{ request.build_absolute_uri }}">
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'favicon/favicon.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'favicon/favicon-16x16.png' %}" sizes="16x16" type="image/png">
+    <link rel="icon" href="{% static 'favicon/favicon-32x32.png' %}" sizes="32x32" type="image/png">
+    <link rel="icon" href="{% static 'favicon/android-chrome-192x192.png' %}" sizes="192x192" type="image/png">
+    <link rel="icon" href="{% static 'favicon/android-chrome-512x512.png' %}" sizes="512x512" type="image/png">
+    <link rel="apple-touch-icon" href="{% static 'favicon/apple-touch-icon.png' %}">
+    <link rel="icon" href="{% static 'favicon/favicon.ico' %}" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Hello Coffee - [Blog Title]</title>
+  </head>
+  <body>
+  <!--==================== HEADER ====================-->
+  <header class="header header-blog" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <img
+          src="assets/img/new-logo.png"
+          alt="Site Logo"
+          srcset=""
+          class="nav__logo-img"
+        />
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Products</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
+      </div>
+
+
+      <!-- Toggle Button -->
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-grid-alt"></i>
+      </div>
+    </nav>
+  </header>
+
+    <!-- Blog detail section -->
+    <section class="blog-section section ">
+      <div class="container">
+        <div class="blog-banner">
+          <img src="assets/img/arabica-coffee-bean-tree_11zon.jpg" alt="Blog Banner Image">
+        </div>
+        <div class="blog-content">
+          <h1 class="blog-title">The Journey of Ethiopian Coffee: From Farm to Cup</h1>
+          <div class="blog-meta">
+            <span class="blog-author">by Hello Coffee Origins</span>
+            <span class="blog-date">Published on January 20, 2025</span>
+          </div>
+          <div class="blog-share">
+            <button class="share-btn" id="facebook-share"><i class='bx bxl-facebook'></i> Share</button>
+            <button class="share-btn" id="twitter-share"><i class='bx bxl-twitter'></i> Tweet</button>
+            <button class="share-btn" id="copy-link"><i class='bx bx-paperclip'></i> Copy Link</button>
+          </div>
+            <article class="blog-text">
+              Ethiopia, often referred to as the birthplace of coffee, is
+              home to some of the world's most celebrated and distinctive
+              coffee beans. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolore asperiores veniam possimus magni minima reiciendis maxime eius rerum eaque quo, nesciunt, sint voluptas dicta reprehenderit consectetur debitis similique vitae.
+            </article>
+
+            <article class="blog-text">
+              Ethiopia, often referred to as the birthplace of coffee, is
+              home to some of the world's most celebrated and distinctive
+              coffee beans. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolore asperiores veniam possimus magni minima reiciendis maxime eius rerum eaque quo, nesciunt, sint voluptas dicta reprehenderit consectetur debitis similique vitae.
+            </article>
+            <br>
+            <br>
+            <article class="blog-text">
+              Ethiopia, often referred to as the birthplace of coffee, is
+              home to some of the world's most celebrated and distinctive
+              coffee beans. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolore asperiores veniam possimus magni minima reiciendis maxime eius rerum eaque quo, nesciunt, sint voluptas dicta reprehenderit consectetur debitis similique vitae.
+            </article>
+
+            <article class="blog-text">
+              Ethiopia, often referred to as the birthplace of coffee, is
+              home to some of the world's most celebrated and distinctive
+              coffee beans. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolore asperiores veniam possimus magni minima reiciendis maxime eius rerum eaque quo, nesciunt, sint voluptas dicta reprehenderit consectetur debitis similique vitae.
+            </article>
+
+            <br>
+            <br>
+
+            <article class="blog-text">
+              Ethiopia, often referred to as the birthplace of coffee, is
+              home to some of the world's most celebrated and distinctive
+              coffee beans. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolore asperiores veniam possimus magni minima reiciendis maxime eius rerum eaque quo, nesciunt, sint voluptas dicta reprehenderit consectetur debitis similique vitae.
+            </article>
+          </div>
+        </div>
+    </section>
+
+    <!-- Add a styled horizontal rule -->
+    <div class="container">
+        <hr class="styled-hr" />
+    </div>
+  <!-- Recommendation Section -->
+  <section class="recommended-blogs section">
+    <div class="container">
+      <h2 class="section-title">You Might Also Like</h2>
+
+      <div class="recommended-blogs-list">
+        <div class="recommended-blog-item">
+          <a href="blog.html" class="recommended-blog-link">
+            <img src="assets/img/blog2.png" alt="Blog Banner" class="recommended-blog-img" />
+            <h3 class="recommended-blog-title">12 Benefits Of Drinking Coffee</h3>
+            <p class="blog__description">
+              The blogs about coffee will help you a lot about how it is
+              prepared, its waiting time, for a good quality coffee.
+                  </p>
+          </a>
+        </div>
+
+        <div class="recommended-blog-item">
+          <a href="blog.html" class="recommended-blog-link">
+            <img src="assets/img/blog2.png" alt="Blog Banner" class="recommended-blog-img" />
+            <h3 class="recommended-blog-title">12 Benefits Of Drinking Coffee</h3>
+            <p class="blog__description">
+              The blogs about coffee will help you a lot about how it is
+              prepared, its waiting time, for a good quality coffee.
+                  </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="copy-notification" id="copy-notification">Link copied!</div>
+
+<!--==================== FOOTER ====================-->
+    <footer class="footer" id="contact">
+      <div class="footer__container container">
+        <h1 class="footer__title"></h1>
+
+        <div class="footer__content grid">
+          <div class="footer__data">
+            <p class="footer__description">Subscribe to our newsletter</p>
+
+            <div class="footer__newsletter">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="footer__input"
+              />
+              <button class="footer__button">
+                <i class="bx bx-right-arrow-alt"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="footer__data">
+            <h2 class="footer__subtitle">Address</h2>
+            <p class="footer__information">
+              9876 Megenagna Av. <br />
+              Addis Ababa 123, Ethiopia
+            </p>
+          </div>
+
+          <div class="footer__data">
+            <h2 class="footer__subtitle">Contact</h2>
+            <p class="footer__information">
+              +2519 12 345678 <br />
+              coffee@email.com
+            </p>
+          </div>
+
+          <div class="footer__data">
+            <h2 class="footer__subtitle">Office</h2>
+            <p class="footer__information">
+              Monday - Saturday <br />
+              9AM - 10PM
+            </p>
+          </div>
+        </div>
+        <div class="footer__group">
+          <ul class="footer__social">
+            <a href="#" class="footer__social-link" target="_blank">
+              <i class="bx bxl-facebook"></i>
+            </a>
+            <a href="#" class="footer__social-link" target="_blank">
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="#" class="footer__social-link" target="_blank">
+              <i class="bx bxl-twitter"></i>
+            </a>
+          </ul>
+
+          <span class="footer__copy">
+            &#169; Hello Coffee Origins. All rigths reserved
+          </span>
+        </div>
+      </div>
+    </footer>
+
+
+
+  <script>
+    // Add the JavaScript code here
+    document.addEventListener('DOMContentLoaded', () => {
+    // Get the current page URL
+    const pageUrl = encodeURIComponent(window.location.href);
+    const pageTitle = encodeURIComponent(document.title);
+
+    // Facebook Share
+    document.getElementById('facebook-share').addEventListener('click', () => {
+      const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
+      window.open(facebookUrl, '_blank', 'width=600,height=400');
+    });
+
+    // Twitter Share
+    document.getElementById('twitter-share').addEventListener('click', () => {
+      const twitterUrl = `https://twitter.com/intent/tweet?url=${pageUrl}&text=${pageTitle}`;
+      window.open(twitterUrl, '_blank', 'width=600,height=400');
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const copyLinkButton = document.getElementById('copy-link');
+    const notification = document.getElementById('copy-notification');
+
+    copyLinkButton.addEventListener('click', () => {
+      navigator.clipboard.writeText(window.location.href)
+        .then(() => {
+          // Show the notification
+          notification.classList.add('show');
+          
+          // Hide the notification after 2 seconds
+          setTimeout(() => {
+            notification.classList.remove('show');
+          }, 2000);
+        })
+        .catch(err => {
+          console.error('Failed to copy: ', err);
+        });
+    });
+  });
+  </script>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="bx bx-up-arrow-alt"></i>
+      </a>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
