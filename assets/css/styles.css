@@ -783,6 +783,11 @@ button {
   color: inherit;
 }
 
+
+.ankiyon{
+  color: rgb(50, 50, 233);
+}
+
 /* Copy Notification Styling */
 .copy-notification {
   position: fixed;
