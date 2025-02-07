@@ -417,19 +417,15 @@ button {
 .products__card {
   background-color: var(--container-color);
   border-radius: 0.5rem;
+  width: 250px;
 }
 
 .products__img {
-  width: 150px;
+  width: auto;
   transition: 0.4s;
 }
 
-.products__shape {
-  background-color: var(--card-color);
-  border-radius: 0.5rem 0.5rem 0 0;
-  text-align: center;
-  padding: 0.25rem 0;
-}
+
 
 .products__data {
   padding: 1rem 0 1.25rem 1rem;
@@ -1247,11 +1243,7 @@ button {
     border-radius: 0.75rem;
   }
   .products__img {
-    width: 200px;
-  }
-  .products__shape {
-    padding: 2rem 0;
-    border-radius: 0.75rem 0.75rem 0 0;
+    width: auto;
   }
   .products__data {
     padding: 1rem 0 1.5rem 1.5rem;
